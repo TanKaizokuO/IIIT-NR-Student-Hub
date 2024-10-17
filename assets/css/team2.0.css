@@ -1,11 +1,25 @@
 *{
-
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
 }
 .team-member img{
     width: 200px;
     height: 300px;
 }
+.card-linkdIN{
+    width: 25px;
+    height: 25px;
+}
 .card-linkdIN img{
     width: 25px;
     height: 25px;
+}
+.team-member{
+    border: 2px solid black;
+    display: inline-block;
+}
+.member-description,.card-linkdIN,.card-line{
+    display: inline-block;
 }
