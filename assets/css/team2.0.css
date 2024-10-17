@@ -5,8 +5,8 @@
     outline: 0;
 }
 .team-member img{
-    width: 200px;
-    height: 300px;
+    width: 270px;
+    height: 400px;
 }
 .card-linkdIN{
     width: 25px;
@@ -23,3 +23,161 @@
 .member-description,.card-linkdIN,.card-line{
     display: inline-block;
 }
+.card-line {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+/*LEADER*/
+.card-line .more-info1 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #f8a287;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 270px;
+    margin-left: 85px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.card-line:hover .more-info1 {
+    visibility: visible;
+    opacity: 1;
+}
+/*TANISHQ*/
+.card-line .more-info2 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #f8a287;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 270px;
+    margin-left: 54px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.card-line:hover .more-info2 {
+    visibility: visible;
+    opacity: 1;
+}
+/*SWAGATA*/
+.card-line .more-info3 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #f8a287;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 270px;
+    margin-left: 82px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.card-line:hover .more-info3 {
+    visibility: visible;
+    opacity: 1;
+}
+/*SHREYANSH*/
+.card-line .more-info4 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #f8a287;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 270px;
+    margin-left: 55px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.card-line:hover .more-info4 {
+    visibility: visible;
+    opacity: 1;
+}
+/*SHUBHANSHU*/
+.card-line .more-info5 {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #f8a287;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    width: 270px;
+    margin-left: 67px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.card-line:hover .more-info5 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.meettheteam{
+    font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+    margin-top: 30px;
+	margin-bottom: 30px;
+    text-align: center;
+	color: rgb(0, 0, 0);
+}
+.leader,.frontend,.backend{
+    display: inline-block;
+    padding: 5px;
+}
+.team-member{
+    padding: 10px;
+}
+.team-heading-medium1,.team-heading-medium2,.team-heading-medium3{
+    border: 2px solid black;
+}
+.team-heading-medium1 h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #ff511a;
+    
+}
+.team-heading-medium2 h2,.team-heading-medium3 h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #ff511a;
+}
+.team{
+    display: flex;
+    justify-content: center;
+}
+.team-member{
+
+    box-shadow: 2px 4px 8px black;
+    transition: 0.5s;
+  }
+  .team-member:hover{
+    box-shadow: 2px 6px 18px black;
+  }
+  

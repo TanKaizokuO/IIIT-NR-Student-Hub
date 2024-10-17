@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover to Reveal Information</title>
+    <style>
+        .info-box {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* Hidden content initially */
+        .info-box .more-info {
+            visibility: hidden;
+            opacity: 0;
+            background-color: lightblue;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        /* Show content on hover */
+        .info-box:hover .more-info {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .info-box:hover {
+            color: blue; /* Optional: change color when hovering */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hover Over the Text</h2>
+    
+    <div class="info-box">
+        Hover here for more info
+        <div class="more-info">
+            This is the additional information that appears when you hover over the text!
+        </div>
+    </div>
+
+</body>
+</html>
