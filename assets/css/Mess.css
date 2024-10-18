@@ -1,0 +1,69 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+    margin: 20PX 10PX 20PX 10PX;
+}
+table, th, td {
+    border: 1px solid #ff511a;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #ff4f1aa8;
+    color: aliceblue;
+}
+.mess-menu-heading{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.mess-menu-heading h2{
+    font-weight: 800;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    color: #ff511a;
+}
+.col-lg-6 select{
+    padding: 10px;
+}
+.faq-section {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+}
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+.active .faq-answer {
+    display: block;
+}
+.messcom,.faq,.faq-section{
+    display: inline-block;
+}
+section.simple-cta h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 50px;
+}
+section.simple-cta h3 em{
+    font-style: normal;
+    color: #ff511a;
+}
+section.simple-cta h3 strong{
+    font-style: normal;
+    color: #43ba7f;
+}

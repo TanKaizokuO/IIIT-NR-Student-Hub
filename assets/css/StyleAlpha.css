@@ -16,7 +16,36 @@ figure, header, nav, section, article, aside, footer, figcaption {
   border: 0;
   outline: 0;
 }
-
+.mission p{
+  margin-bottom: 10px;
+}
+.div-dec1{
+  width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+.div-dec2{
+  width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+#Mission em{
+  color: #ff511a;
+  font-style: normal;
+}
+#Mission{
+  font-weight: 700;
+  color: #fff;
+ padding-bottom: 15px;
+}
 .clearfix:after {
   content: ".";
   display: block;
