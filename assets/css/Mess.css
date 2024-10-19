@@ -69,4 +69,17 @@ th {
   .faq-section h2 {
     margin-bottom: 20px;
   }
-</sty
+.col-lg-5 h3 em{
+    text-decoration: none;
+    font-style: normal;
+    color: #ff511a;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.col-lg-5 h3 strong{
+    font-style: normal;
+    text-decoration: none;
+    color: #43ba7f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
