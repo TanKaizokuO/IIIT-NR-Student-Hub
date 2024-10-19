@@ -53,17 +53,20 @@ th {
 .messcom,.faq,.faq-section{
     display: inline-block;
 }
-section.simple-cta h3 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 50px;
-}
-section.simple-cta h3 em{
-    font-style: normal;
-    color: #ff511a;
-}
-section.simple-cta h3 strong{
-    font-style: normal;
-    color: #43ba7f;
-}
+.faq-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  .faq-question {
+    font-weight: bold;
+  }
+  .faq-section h2 {
+    margin-bottom: 20px;
+  }
+</sty

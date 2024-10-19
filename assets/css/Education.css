@@ -1,0 +1,44 @@
+.courses ul{
+
+}
+.section-heading2 {
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  
+  .section-heading2 h4 {
+    margin-top: 50px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ff511a;
+  }
+  .faq-section {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+}
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+.active .faq-answer {
+    display: block;
+}
+.messcom,.faq,.faq-section{
+    display: inline-block;
+}
