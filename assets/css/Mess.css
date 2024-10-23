@@ -83,3 +83,7 @@ th {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
+.Mess-Table{
+    display: flex;
+    justify-content: center;
+}
