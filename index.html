@@ -381,7 +381,8 @@
             <h6>Your Happiness</h6>
             <h4>Get a Recommendation</h4>
           </div>
-          <form id="calculate" action="" method="get">
+          <!--<form id="calculate" onsubmit="submitForm(event)">-->
+          <form id="calculate" action="https://backendimg.onrender.com/submit" method="POST" enctype="application/x-www-form-urlencoded">-->
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
@@ -404,7 +405,7 @@
               <div class="col-lg-12">
                 <fieldset>
                   <label for="chooseOption" class="form-label">Your Reason</label>
-                  <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
+                  <select name="reason" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
                       <option selected>Choose an Option</option>
                       <option type="checkbox" name="option1" value="Bored">Bored</option>
                       <option value="Lame life">Lame life</option>
@@ -425,6 +426,9 @@
     </div>
   </section>
  <!-- ***** Registration ends here ***** -->
+
+<script src="assets/js/formHandler.js">
+</script>
 
   <!-- ***** testimonials Starts here ***** -->
   <section class="testimonials" id="testimonials">
