@@ -50,6 +50,7 @@ th {
 .active .faq-answer {
     display: block;
 }
+
 .messcom,.faq,.faq-section{
     display: inline-block;
 }
@@ -138,20 +139,23 @@ th {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #007bff;
+    background: #ff511a;
     cursor: pointer;
   }
 
   .Menu-Rating button {
     margin-top: 15px;
-    background-color: #007bff;
+    background-color: #fc693c;
     color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
   }
 
   .Menu-Rating button:hover {
-    background-color: #0056b3;
+    background-color: #f93a00;
+    box-shadow: 5px 2px 9px  #fc693c;
+    
   }
