@@ -147,6 +147,7 @@
 
 
 <!-- ***** Menu Rating Banner Area Start ***** -->
+  <!--
  <section>
   <div class="Menu-Rating-container">
   <div class="Menu-Rating">
@@ -170,6 +171,32 @@
   </div>
 
  </section>
+  -->
+  <section>
+  <div class="Menu-Rating">
+    <form action="https://backendimg.onrender.com/submit_meal" method="POST" enctype="application/x-www-form-urlencoded">
+      <h2>Rate the Menu</h2>
+      
+      <label for="meal">Meal</label>
+      <select id="meal" name="meal">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="snacks">Snacks</option>
+        <option value="dinner">Dinner</option>
+      </select>
+      
+      <label for="rating">Rating</label>
+      <input id="rating" name="rating" type="range" max="10" min="0" value="10" step="1" required>
+      <br>
+      
+      <label for="message">Your Feedback</label>
+      <input id="message" name="message" type="text" placeholder="Enter Your Message" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
 <!-- ***** Menu Rating Banner Area Ends ***** -->
 
 <!-- Mess Food Menu Starts here -->
