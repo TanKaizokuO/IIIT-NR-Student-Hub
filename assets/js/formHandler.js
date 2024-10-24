@@ -10,7 +10,7 @@ async function submitForm(event) {
     };
 
     try {
-      const response = await fetch('https://backendimg.onrender.com/submit', {
+      const response = await fetch("https://backendimg.onrender.com/submit", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
