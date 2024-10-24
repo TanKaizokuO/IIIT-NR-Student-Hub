@@ -87,3 +87,71 @@ th {
     display: flex;
     justify-content: center;
 }
+.Menu-Rating-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+  .Menu-Rating {
+   
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .Menu-Rating h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .Menu-Rating label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .Menu-Rating select, 
+  .Menu-Rating input[type="text"], 
+  .Menu-Rating input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .Menu-Rating input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ddd;
+  }
+
+  .Menu-Rating input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+  }
+
+  .Menu-Rating button {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .Menu-Rating button:hover {
+    background-color: #0056b3;
+  }
