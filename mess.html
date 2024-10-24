@@ -151,7 +151,7 @@
   <div class="Menu-Rating-container">
   <div class="Menu-Rating">
     <form action="https://backendimg.onrender.com/submit_meal" method="POST" enctype="application/x-www-form-urlencoded">
-      <h2>Rate the Menu</h2>
+      <h2>Rate the Menu</h2> 
       
       <label for="meal">Meal</label>
       <select id="meal" name="meal">
@@ -166,9 +166,30 @@
       <br>
       
       <label for="message">Your Feedback</label>
-      <input id="message" name="message" type="text" placeholder="Enter Your Message" required>
       
+      <textarea id="message" name="message" placeholder="Enter Your Feedback" rows="4" required></textarea>
+
       <button type="submit">Submit</button>
+      <!-- <h2>Rate the Menu</h2>
+          
+      <label for="meal">Meal</label>
+      <select id="meal" name="meal" required>
+        <option value="" disabled selected>Select a Meal</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="snacks">Snacks</option>
+        <option value="dinner">Dinner</option>
+      </select>
+      
+      <label for="rating">Rating</label>
+      <input id="rating" name="rating" type="range" max="5" min="0" value="2.5" step=".1" required>
+      <span id="ratingValue">5</span> 
+      <br>
+      
+      <label for="message">Your Feedback</label>
+      
+      
+      <button type="submit">Submit</button>-->
     </form>
   </div>
 </div>

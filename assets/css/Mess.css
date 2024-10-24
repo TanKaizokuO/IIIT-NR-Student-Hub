@@ -94,68 +94,80 @@ th {
     margin: 20px;
 }
 
-  .Menu-Rating {
-   
-    background-color: #ffffff;
+.menu-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.menu-rating {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+select, input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#rating {
+  width: 80%;
+  display: inline-block;
+  background: #ff511a;
+}
+
+#ratingValue {
+  font-size: 16px;
+  color: #555;
+  margin-left: 10px;
+}
+
+
+button {
+  background-color: #ff4f1aaf;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #ff511a;
+}
+
+@media (max-width: 600px) {
+  .menu-rating {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
   }
 
-  .Menu-Rating h2 {
-    margin-bottom: 15px;
-    font-size: 24px;
-    color: #333;
-  }
-
-  .Menu-Rating label {
-    display: block;
-    margin-top: 10px;
+  button {
     font-size: 14px;
-    color: #666;
   }
-
-  .Menu-Rating select, 
-  .Menu-Rating input[type="text"], 
-  .Menu-Rating input[type="range"] {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .Menu-Rating input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    background: #ddd;
-  }
-
-  .Menu-Rating input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #ff511a;
-    cursor: pointer;
-  }
-
-  .Menu-Rating button {
-    margin-top: 15px;
-    background-color: #fc693c;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    
-  }
-
-  .Menu-Rating button:hover {
-    background-color: #f93a00;
-    box-shadow: 5px 2px 9px  #fc693c;
-    
-  }
+}
