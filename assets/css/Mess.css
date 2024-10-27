@@ -171,3 +171,63 @@ button:hover {
     font-size: 14px;
   }
 }
+#rangeValue,#rangeValueL{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #ff511a;
+    display: inline-block;
+}
+
+/* Container for the rating input */
+#rating {
+  width: 100%; /* Adjust width as needed */
+  -webkit-appearance: none; /* Remove default styling */
+  appearance: none;
+  background:  #ff4f1a90; /* Gradient background */
+  height: 8px;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+/* Thumb styling for range input */
+#rating::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff511a;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
+}
+
+#rating::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff511a;
+  cursor: pointer;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect for thumb */
+#rating:hover::-webkit-slider-thumb {
+  background: #ff8a33;
+}
+
+#rating:hover::-moz-range-thumb {
+  background: #ff8a33;
+}
+
+/* Dynamic value label styling */
+#rangeValue {
+  font-weight: bold;
+  margin-left: 10px;
+  color: #ff511a;
+  font-size: 1rem;
+}

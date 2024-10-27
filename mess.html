@@ -31,7 +31,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Starts here ***** -->
                     <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                        <img src="./assets/images/logo.png" alt="">
                     </a>
                     <!-- ***** Logo Ends here**** -->
 
@@ -166,8 +166,11 @@
       </select>
       
       <label for="rating">Rating</label>
-      <input id="rating" name="rating" type="range" max="10" min="0" value="10" step="1" required>
+      <input id="rating" name="rating" type="range" max="5" min="0" value="5" step="0.25" required oninput="rangeValue.innerText = this.value">
       <br>
+      
+<p id="rangeValue">5</p>
+<p id="rangeValueL">/5</p>
       
       <label for="message">Your Feedback</label>
       
