@@ -17,6 +17,7 @@
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/StyleAlpha.css">
+    <link rel="stylesheet" href="assets/css/Mess.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
@@ -72,9 +73,12 @@
           <div class="row">
             <div class="col-lg-8">
               <div class="header-text">
-                <h2>Get <em>ready</em> to <em>customize</em><br>&amp; <em>upgrade</em> all aspects of your <em>Mess</em></h2>
-                <div class="div-dec"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta, corrupti dolorem culpa rerum sit quidem odit cupiditate optio incidunt consequuntur accusantium placeat? Nam quasi aspernatur eveniet quis ullam ab assumenda incidunt facere? Necessitatibus, perferendis.</p>
+                <h2><em>Healthy, Tasty,</em> &amp; <em>Fresh</em>: <em>Daily Dining</em> at <em>Mess</em></h2>
+                <div class="div-dec1"></div>
+                <p>Welcome to our Mess, where we serve fresh, nutritious, and delicious meals daily. Enjoy a variety of dishes crafted with care, designed to nourish and energize you. Join us for a fulfilling dining experience in a warm, community-focused environment.</p>
+                <h4 id="Mission">Our <em>Mission</em> Statement : </h4>
+                
+                <p class="mission">Our mission is to provide healthy, delicious meals, fostering community, well-being, and sustainability through fresh ingredients and thoughtful service.</p>
                 <div class="buttons">                  
                   <div class="orange-button">
                     <a href="contact-us.html" target="_blank">Contact Us</a>
@@ -89,9 +93,340 @@
 </div>
 <!-- ***** Main Banner Area Ends here ***** -->
 
- <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis ratione! Excepturi explicabo, quas reiciendis totam eius hic corporis ipsum magnam, unde veritatis dolorum? Error in temporibus eos nemo nesciunt, delectus, iusto quidem facilis possimus voluptate, qui optio esse. Et natus illo reprehenderit minima fugiat autem. Unde illum nemo magnam consequuntur quasi numquam explicabo pariatur voluptas ipsa nobis doloribus expedita perferendis repellendus quos corporis impedit animi, earum temporibus nisi dolorem iure vitae magni? Totam, suscipit soluta. Repellat unde ipsa voluptates minima eum omnis eaque reiciendis ea optio exercitationem, pariatur similique, voluptatem quae aliquam harum at magni architecto porro impedit. Enim?
- </p>
+<!-- ***** Mess timings Area Starts here ***** -->
+<section class="what-we-do">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="left-content">
+          <h4>Please tell us about your ideas for improvement </h4>
+          <p>Your dining experience is important to us, and we want to hear from you. Please share your thoughts and suggestions about the meals served at our Mess. Your feedback helps us improve our menu, service, and overall experience to better meet your needs. Don't worry all your information will be kept anonymous</p>
+          <div class="green-button">
+            <a href="contact-us.html" target="_blank">Feedback</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="right-items">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="item">
+                <em>01</em>
+                <h4>Breakfast</h4>
+                <p> 8:00 AM – 9:30 AM</p>
+                <ul id="breakfast-ratings"></ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item">
+                <em>02</em>
+                <h4>Lunch</h4>
+                <p> 12:30 PM – 2:00 PM</p>
+                <ul id="lunch-ratings"></ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item">
+                <em>03</em>
+                <h4>Snacks</h4>
+                <p> 5:30 PM – 6:30 PM</p>
+                <ul id="snack-ratings"></ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="item">
+                <em>04</em>
+                <h4>Dinner</h4>
+                <p> 8:00 PM – 9:30 PM</p>
+                <ul id="dinner-ratings"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Mess Timings Area Ends here ***** -->
+
+
+<!-- ***** Menu Rating Banner Area Start ***** -->
+<section>
+  <div class="Menu-Rating-container">
+  <div class="Menu-Rating">
+    <form action="https://backendimg.onrender.com/submit_meal" method="POST" enctype="application/x-www-form-urlencoded">
+      <h2>Rate the Menu</h2> 
+      
+      <label for="meal">Meal</label>
+      <select id="meal" name="meal">
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="snacks">Snacks</option>
+        <option value="dinner">Dinner</option>
+      </select>
+      
+      <label for="rating">Rating</label>
+      <input id="rating" name="rating" type="range" max="10" min="0" value="10" step="1" required>
+      <br>
+      
+      <label for="message">Your Feedback</label>
+      
+      <textarea id="message" name="message" placeholder="Enter Your Feedback" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+      <!-- <h2>Rate the Menu</h2>
+          
+      <label for="meal">Meal</label>
+      <select id="meal" name="meal" required>
+        <option value="" disabled selected>Select a Meal</option>
+        <option value="breakfast">Breakfast</option>
+        <option value="lunch">Lunch</option>
+        <option value="snacks">Snacks</option>
+        <option value="dinner">Dinner</option>
+      </select>
+      
+      <label for="rating">Rating</label>
+      <input id="rating" name="rating" type="range" max="5" min="0" value="2.5" step=".1" required>
+      <span id="ratingValue">5</span> 
+      <br>
+      
+      <label for="message">Your Feedback</label>
+      
+      
+      <button type="submit">Submit</button>-->
+    </form>
+  </div>
+</div>
+</section>
+
+<!-- ***** Menu Rating Banner Area Ends ***** -->
+
+<!-- Mess Food Menu Starts here -->
+
+ <div class="mess-menu-heading">
+ <H2 CLASS="mess-menu-heading">Our Mess Menu</H2></div>
+ <div class="Mess-Table">
+<table class="mess-menu">
+  <thead class="mess-menu-header">
+      <tr>
+          <th>Day</th>
+          <th>Breakfast</th>
+          <th>Lunch </th>
+          <th>Tea & Snacks</th>
+          <th>Dinner</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="mess-menu-row">
+          <td>Monday</td>
+          <td>Aloo Paratha, <BR>Green Mint Chutney, <BR>Plain Curd</td>
+          <td>Pumpkin, Chole,<BR> Dal, Roti,<BR> Rice</td>
+          <td>Mangode, Tea</td>
+          <td>Bhindi (No Aloo), Dal Makhni,<BR> Roti, Rice, <BR>Beetroot Juice</td>
+      </tr>
+      <tr class="mess-menu-row">
+          <td>Tuesday</td>
+          <td>Plain Idly, <BR>Coconut Chutney, <BR>Sambhar</td>
+          <td>Aloo Chips, Bhatek Ki Bharta,<BR> Dal, Raita (Boondi),<BR> Roti, Rice</td>
+          <td>Sabudana Wada, Coffee</td>
+          <td>Chicken Curry, Lobiya,<BR> Roti, Rice,<BR> Suji Halwa</td>
+      </tr>
+      <tr class="mess-menu-row">
+          <td>Wednesday</td>
+          <td>Poha, White Matar Sabji,<BR> Boiled Egg (2 pcs)<BR>Fruits</td>
+          <td>Lauki Chana Dal<BR> Rajma, Dal, Dahi,<BR> Roti, Jeera Rice</td>
+          <td>Samosa Chat, <BR>Sweet Red Chutney, Tea</td>
+          <td>Kadhi Paneer, Dal,<BR> Roti, Jeera Rice,<BR> Neembu Pani</td>
+      </tr>
+      <tr class="mess-menu-row">
+          <td>Thursday</td>
+          <td>Sambhar Vada,<BR> Nariyal Chutney,<BR> Sprouts</td>
+          <td>Aloo Bhurji,<BR> Boondi Kadhi, Dal,<BR> Roti, Rice</td>
+          <td>Bhel, Tea</td>
+          <td>Choley, Dal,<BR> Roti, Rice,<BR> Gulab Jamun</td>
+      </tr>
+      <tr class="mess-menu-row">
+          <td>Friday</td>
+          <td>Methi Paratha,<BR> Tamatar Chatni</td>
+          <td>Cabbage, Kaala Chana,<BR> Dal, Raita (Carrot, Cucumber),<BR> Roti, Rice</td>
+          <td>Aloo Tikki,<BR> Chutney + Matar Sabji,<BR> Coffee</td>
+          <td>Egg Curry/Egg Bhurji,<BR> Dal, Roti, <BR>Jeera Rice, Watermelon Juice</td>
+      </tr>
+      <tr class="mess-menu-row">
+          <td>Saturday</td>
+          <td>Poori,<BR> Aloo Sabji</td>
+          <td>Soya Chunks,<BR> Kundru, Dal,<BR> Curd, Roti, Rice</td>
+          <td>Bread Pakoda/Sandwich,<BR> Tea</td>
+          <td>Kurkuri Bhindi,<BR> Chilly Paneer/Methi Matar Malai<BR>, Roti, Rice, Neembu Pani</td>
+      </tr>
+      <tr class="mess-menu-row">
+          <td>Sunday</td>
+          <td>Dosa,<BR> Coconut Chutney,<BR> Sambhar</td>
+          <td>Lauki Kofta,<BR> Dal, Lassi/Buttermilk,<BR> Roti, Rice</td>
+          <td>Pani Poori,<BR> Tea</td>
+          <td>Basmati Chicken Biryani,<BR> Dal, Gravy<BR> Custard</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<!-- Mess Food Menu ends here -->
+
+
+<!-- ***** Menu Change Banner Area Start ***** -->
+<section class="contact-us-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h6>If you have any special Dietary needs </h6>
+          <h4>Mention them here </h4>
+          <h4> mention if you need jain food</h4>
+        </div>
+      </div>
+      <div class="col-lg-10 offset-lg-1">
+        <form id="contact" action="" method="post">
+          <div class="row">
+            <div class="col-lg-6">
+              <fieldset>
+                <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+              </fieldset>
+            </div>
+            <div class="col-lg-6">
+              <fieldset>
+                <input type="phone" name="phone" id="phone" placeholder="Your Phone..." autocomplete="on" required>
+              </fieldset>
+            </div>
+            <div class="col-lg-6">
+              <fieldset>
+                <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+              </fieldset>
+            </div>
+            <div class="col-lg-6">
+              <fieldset>
+                <select name="subject" id="subject" required>
+                  <option value="" disabled selected>Select your preference...</option>
+                  <option value="Veg">Veg</option>
+                  <option value="Non-Veg">Non-Veg</option>
+                  <option value="Jain">Jain</option>
+                  <option value="Others">Others</option>
+                </select>
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <textarea name="message" id="message" placeholder="Your Message..."></textarea>
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+              </fieldset>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***** Menu Change Banner Area Ends ***** -->
+
+<!-- Mess Comittee Area starts here -->
+<section class="simple-cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <h4>The Mess Comittee</h4>
+        <h3> <em>Non Veg Representative </em>: X</h4>
+        <h3><strong>Veg Representative </strong>: Y</h4>
+      </div>
+      <div class="col-lg-7">
+        <div class="buttons">
+          <div class="green-button">
+            <a href="our-services.html" target="_blank">Contact X</a>
+          </div>
+          <div class="orange-button">
+            <a href="contact-us.html" target="_blank">Contact Y</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mess Comittee Area starts here -->
+
+<!-- *****FAQs  Area Starts here-->
+<div class="faq-section">
+  <div class="faq">
+  <h2>FAQs </h2>
+  <div class="faq-item">
+      <div class="faq-question">
+          <i class="fas fa-question-circle"></i> What are the dining hours?
+      </div>
+      <div class="faq-answer">
+          The dining hours are from 7:00 AM to 10:00 PM daily.
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          <i class="fas fa-question-circle"></i> How can I provide feedback on meals?
+      </div>
+      <div class="faq-answer">
+          You can provide feedback through the feedback form available on our website.
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          <i class="fas fa-question-circle"></i> Are there vegetarian options available?
+      </div>
+      <div class="faq-answer">
+          Yes, we offer a variety of vegetarian options daily.
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="faq-section">
+  <div class="messcom">
+  <h2>FAQs </h2>
+  
+  <div class="faq-item">
+      <div class="faq-question">
+          <i class="fas fa-user"></i> Who are the current members of the mess committee?
+      </div>
+      <div class="faq-answer">
+          The current members are 
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          <i class="fas fa-user"></i> How can I contact a mess committee member?
+      </div>
+      <div class="faq-answer">
+          You can reach out to committee members via email listed on the website.
+      </div>
+  </div>
+  <div class="faq-item">
+      <div class="faq-question">
+          <i class="fas fa-user"></i> How are mess committee members selected?
+      </div>
+      <div class="faq-answer">
+          Committee members are elected by the mess members every semester.
+      </div>
+  </div>
+</div>
+</div>
+<script>
+  // JavaScript to toggle the display of the answer
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+          item.classList.toggle('active');
+      });
+  });
+</script>
+<!-- *****FAQs Area ends here-->
+
+
   <!-- ***** partners Starts here ***** -->
   <section class="partners">
     <div class="container">
@@ -138,7 +473,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis ration
         <div class="col-lg-12">
           <p>Copyright © 2024 Tanishq Co., Ltd. All Rights Reserved. 
           
-            <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://www.youtube.com" target="_blank">TanKaizokuO</a></p>
+            <br>Designed by <a title="Copyright" rel="sponsored" href="https://www.youtube.com" target="_blank">TanKaizokuO</a></p>
         </div>
       </div>
     </div>
@@ -146,11 +481,13 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis ration
  <!-- ***** Copyright ends here ***** -->
 <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
+   
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
+  <script src="/assets/js/mess.js"></script>
 
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/swiper.js"></script>

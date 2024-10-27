@@ -3,18 +3,42 @@
     
   }
   .container{
-    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+    /* background-image: linear-gradient(#0c1cac,#0082e6); */
+    /* background-color:#212741; */
 
   }
+  .meet-the-team{
+    display: flex;
+    justify-content: center;
+  }
   #MEET-OUR-TEAM {
-	font-family: 'Dancing Script', cursive;
-	font-size: 80px;
-  margin-top: 30px;
-	margin-bottom: 30px;
+    font-family: Serif;
+    display: inline-block;
+    font-size: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
-	color: white;
+    color: #ffffff;
+    border: 2px solid #ff511a;
+    box-shadow: 8px 8px 8px #ff4f1a9a;
+    background: linear-gradient(135deg, #ff511a, #ffad28);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+#MEET-OUR-TEAM:hover {
+    transform: scale(1.05); /* Slightly enlarges the section on hover */
+    box-shadow: 2px 6px 18px rgba(255, 81, 26, 0.8);
+}
+
+@media (max-width: 768px) {
+    #MEET-OUR-TEAM {
+        font-size: 50px; /* Reduces font size for smaller screens */
+        padding: 15px; /* Adjusts padding for smaller screens */
+    }
+}
+
 #I1,#I2,#I3,#I4,#I5{
     height: 700px;
     width: 550px;
@@ -74,13 +98,18 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    box-shadow: 2px 4px 8px black;
+    transition: 0.5s;
+  }
+  .mainImg:hover{
+    box-shadow: 2px 6px 18px #ff511a;
   }
   
   .text-blk.headingText {
     font-size: 22px;
     font-weight: 700;
     line-height: 30px;
-    color: rgb(176, 98, 255);
+    color: #ff511a;
     padding-top: 0px;
     padding-right: 10px;
     padding-bottom: 0px;
@@ -132,6 +161,7 @@
     padding-bottom: 0px;
     padding-left: 0px;
   }
+
   
   .explore {
     font-size: 16px;
@@ -160,10 +190,7 @@
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    padding-top: 8px;
-    padding-right: 40px;
-    padding-bottom: 8px;
-    padding-left: 40px;
+    padding: 10px;
   }
   
   .explore:hover {
@@ -176,7 +203,7 @@
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
-    background-color: rgb(176, 98, 255);
+    background-color: #ff511a;
     color: white;
     border-top-width: initial;
     border-right-width: initial;
@@ -247,7 +274,7 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 430px;
-    background-color: rgb(176, 98, 255);
+    background-color: #ff511a;
     padding-top: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
