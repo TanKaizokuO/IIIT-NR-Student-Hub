@@ -112,7 +112,7 @@ p {
 }
 
 img {
-  width: 70px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -135,6 +135,11 @@ body {
 ::-moz-selection {
   background: #ff511a;
   color: #fff;
+}
+
+.logo img{
+  width: 70px;
+  overflow: hidden;
 }
 
 @media (max-width: 991px) {
