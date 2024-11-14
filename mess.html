@@ -153,55 +153,41 @@
 <!-- ***** Menu Rating Banner Area Start ***** -->
 <section>
   <div class="Menu-Rating-container">
-  <div class="Menu-Rating">
-    <form action="https://backendimg.onrender.com/submit_meal" method="POST" enctype="application/x-www-form-urlencoded">
-      <h2>Rate the Menu</h2> 
-      
-      <label for="meal">Meal</label>
-      <select id="meal" name="meal">
-        <option value="breakfast">Breakfast</option>
-        <option value="lunch">Lunch</option>
-        <option value="snacks">Snacks</option>
-        <option value="dinner">Dinner</option>
-      </select>
-      
-      <label for="rating">Rating</label>
-      <input id="rating" name="rating" type="range" max="10" min="0" value="5" step="1" required oninput="rangeValue.innerText = this.value">
-      <br>
-      
-<p id="rangeValue">5</p>
-<p id="rangeValueL">/10</p>
-      
-      <label for="message">Your Feedback</label>
-      
-      <textarea id="message" name="message" placeholder="Enter Your Feedback" rows="4" required></textarea>
+    <div class="Menu-Rating">
+      <form action="https://backendimg.onrender.com/submit_meal" method="POST" enctype="application/x-www-form-urlencoded">
+        <h2>Rate the Menu</h2> 
+        
+        <label for="meal">Meal</label>
+        <select id="meal" name="meal">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="snacks">Snacks</option>
+          <option value="dinner">Dinner</option>
+        </select>
+        
+        <label for="rating">Rating</label>
+        <input id="rating" name="rating" type="range" max="10" min="0" value="5" step="1" required>
+        
+        <!-- Displaying Range Value Inline -->
+        <p id="rangeDisplay"><span id="rangeValue">5</span>/10</p>
+        
+        <label for="message">Your Feedback</label>
+        <textarea id="message" name="message" placeholder="Enter Your Feedback" rows="4" required></textarea>
 
-      <button type="submit">Submit</button>
-      <!-- <h2>Rate the Menu</h2>
-          
-      <label for="meal">Meal</label>
-      <select id="meal" name="meal" required>
-        <option value="" disabled selected>Select a Meal</option>
-        <option value="breakfast">Breakfast</option>
-        <option value="lunch">Lunch</option>
-        <option value="snacks">Snacks</option>
-        <option value="dinner">Dinner</option>
-      </select>
-      
-      <label for="rating">Rating</label>
-      <input id="rating" name="rating" type="range" max="5" min="0" value="2.5" step=".1" required>
-      <span id="ratingValue">5</span> 
-      <br>
-      
-      <label for="message">Your Feedback</label>
-      
-      
-      <button type="submit">Submit</button>-->
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
-</div>
 </section>
 
+<!-- Inline Script for Dynamic Range Display -->
+<script>
+  const ratingInput = document.getElementById("rating");
+  const rangeValue = document.getElementById("rangeValue");
+  ratingInput.oninput = () => {
+    rangeValue.innerText = ratingInput.value;
+  };
+</script>
 <!-- ***** Menu Rating Banner Area Ends ***** -->
 
 <!-- Mess Food Menu Starts here -->
