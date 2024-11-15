@@ -3,13 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function fetchAverageRatings() {
-    try {
-        const response = await fetch("https://backendimg.onrender.com/average_ratings"); // Adjust URL
-        const data = await response.json();
-        displayAverageRatings(data.average_ratings);
-    } catch (error) {
-        console.error("Error fetching average ratings:", error);
-    }
+    const meals = ["Breakfast","Lunch","Snacks","Dinner"].map(x=>x.toLocaleLowerCase())
+    fetch(`https://backendimg.onrender.com/average_ratings`)
+    .then(x => x.json())
+    .then(y => {
+        console.log(y)
+        meals.forEach(meal=>{ 
+        document.getElementById(`${meal}-ratings`).innerHTML = "&#11088; " + (y.average_ratings[meal] ?? "No Rating");   
+        })
+    });
 }
 
 function displayAverageRatings(data) {
