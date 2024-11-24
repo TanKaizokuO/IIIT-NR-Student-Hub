@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./Css/AdminPage.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="https://tankaizokuo.github.io/IIIT-NR-Student-hub/"><i class="fa fa-home"></i>IIIT-NR </a></li>
+                <li><a href="users.html"><i class="fa fa-users"></i>Dashboard</a></li>
+                <li><a href="logout.html"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome">
+            <h2>Welcome, Admin</h2>           
+        </section>     
+       
+    </main>
+    <div class="Navigation">
+        <div class="green-button" onclick="getMeals()"><a >Meal feedback</a></div>
+        <div class="orange-button" href=""><a >Delete meal feedback</a></div>
+        <div class="green-button" onclick="getSubNewsletter()"><a >Sucribers of newsletter</a></div>
+        <div class="orange-button" onclick="getRecommendations()"><a >Recommendations</a></div>
+    </div>
+    <div>
+        <table >
+            <tbody id="table">
+
+            </tbody>
+          </table>
+          <style>
+            table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling table headers */
+table th {
+  background-color: #212741;
+  /* Green background */
+  color: white; /* White text */
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Styling table cells */
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+/* Highlighting rows on hover */
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Placeholder for an empty table body */
+table tbody:empty:before {
+  content: "No data available";
+  display: table-row;
+  text-align: center;
+  height: 50px;
+  color: #555;
+  font-style: italic;
+}
+          </style>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
