@@ -34,5 +34,5 @@ A web application designed to provide **entertainment**, **education**, and **me
 
 ### Clone the Repository  
 ```bash  
-git clone https://github.com/your-username/your-repo-name.git  
-cd your-repo-name  
+git clone https://github.com/TanKaizokuO/IIIT-NR-Student-hub.git  
+cd IIIT-NR-Student-hub  
