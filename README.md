@@ -22,7 +22,8 @@ A web application designed to provide **entertainment**, **education**, and **me
 - **MongoDB** (local and Atlas for cloud-based storage)  
 
 ### Deployment  
-- Hosted on **Render.com**  
+- Backend Hosted on **Render.com**
+- Backend Hosted on **Github.com**  
 
 ## Installation  
 
